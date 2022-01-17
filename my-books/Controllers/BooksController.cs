@@ -27,7 +27,7 @@ namespace my_books.Controllers
             return Ok(allBooks);
         }
 
-        [HttpGet("get-all-book-by-id/{id}")]
+        [HttpGet("get-book-by-id/{id}")]
         public IActionResult GetBookById(int id)
         {
             var book = _booksService.GetBookById(id);
